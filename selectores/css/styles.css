@@ -1,0 +1,66 @@
+body {
+    background: rgb(195, 187, 187);
+}
+
+table {
+    margin: 20px;
+    border-collapse: collapse;
+    border: #333;
+    align-items: center;
+    width: 25%;
+}
+
+th {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E6F3FF;
+}
+
+.top{
+    background-image: url("../img/fondo_gris.gif");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#euroDolar{
+    background-image: url("../img/euro.png");
+    background-repeat: no-repeat;
+}
+#dolarYen{
+    background-image: url("../img/dolar.png");
+    background-repeat: no-repeat;
+}
+#libraDolar{
+    background-image: url("../img/libra.png");
+    background-repeat: no-repeat;
+}
+#yenEuro{
+    background-image: url("../img/yen.png");
+    background-repeat: no-repeat;
+}
+#primeraFila {
+    background-color: #FFFFCC;
+    text-align: center;
+}
+#segundaFila{
+    background-color: white;
+    text-align: center;
+}
+#terceraFila {
+    background-color: #FFFFCC;
+    text-align: center;
+}
+#cuartaFila{
+    background-color:white;
+    text-align: center;
+}
+#primeraFila:hover {
+    background-color: #FFFF66;
+}
+#segundaFila:hover {
+    background-color: #FFFF66;
+}
+#terceraFila:hover {
+    background-color: #FFFF66;
+}
+#cuartaFila:hover {
+    background-color: #FFFF66;
+}
