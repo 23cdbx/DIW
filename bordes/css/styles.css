@@ -1,0 +1,161 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+#container {
+    background-color: white;
+    height: 800px;
+    width: 700px;
+    margin: 20px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    font-size: 9px;
+    padding: 20px;
+    border-bottom: 2px solid cadetblue;
+}
+
+#bloque1 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    float: left;
+}
+
+#caja1 {
+    margin: 20px;
+    padding: 15px;
+    width: 170px;
+    height: 30px;
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 20px 30px 10px 50px;
+}
+
+#caja2 {
+    padding: 15px;
+    width: 170px;
+    height: 30px;
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#caja3 {
+    margin: 30px;
+    padding: 15px;
+    width: 180px;
+    height: 30px;
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 50px;
+    background:linear-gradient(white, cadetblue);
+}
+
+#bloque1_2 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    float: left;
+}
+
+#caja4 {
+    margin-top: 10px;
+    margin: 20px;
+    padding: 15px;
+    width: 175px;
+    height: 30px;
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 50px;
+    background: radial-gradient(white, cadetblue);
+}
+
+#caja5 {
+    padding: 15px;
+    width: 175px;
+    height: 30px;
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 50px;
+}
+
+#caja6 {
+    margin: 30px;
+    padding: 15px;
+    width: 170px;
+    height: 30px;
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+#bloque2 {
+    margin: 10px;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#caja7 {
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 50px;
+    margin: 5px;
+    width: 670px;
+    height: 30px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px cadetblue;
+}
+
+#caja8 {
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 50px;
+    margin: 5px;
+    width: 670px;
+    height: 30px;
+    padding: 20px;
+}
+
+#caja9 {
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 50px;
+    margin: 5px;
+    width: 670px;
+    height: 30px;
+    padding: 20px;
+    text-shadow: 5px 5px 5px cadetblue;
+}
+
+#caja10 {
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 50px;
+    margin: 5px;
+    width: 670px;
+    height: 30px;
+    padding: 20px;
+    background: linear-gradient(-90deg, cadetblue, white);
+}
+
+footer {
+    text-align: center;
+    font-size: 9px;
+    padding: 10px;
+    border-top: 2px solid cadetblue;
+}
+
+p {
+    padding: 15px;
+}
