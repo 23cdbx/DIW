@@ -26,11 +26,12 @@ header {
     align-items: center;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     float: left;
 }
 
 #caja1 {
-    margin: 20px;
+    margin: 15px;
     padding: 15px;
     width: 170px;
     height: 30px;
@@ -40,6 +41,7 @@ header {
 }
 
 #caja2 {
+    margin: 15px;
     padding: 15px;
     width: 170px;
     height: 30px;
@@ -49,9 +51,9 @@ header {
 }
 
 #caja3 {
-    margin: 30px;
+    margin: 15px;
     padding: 15px;
-    width: 180px;
+    width: 170px;
     height: 30px;
     border: 1px solid grey;
     text-align: center;
@@ -59,18 +61,10 @@ header {
     background:linear-gradient(white, cadetblue);
 }
 
-#bloque1_2 {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    float: left;
-}
-
 #caja4 {
-    margin-top: 10px;
-    margin: 20px;
+    margin: 15px;
     padding: 15px;
-    width: 175px;
+    width: 170px;
     height: 30px;
     border: 1px solid grey;
     text-align: center;
@@ -79,8 +73,9 @@ header {
 }
 
 #caja5 {
+    margin: 15px;
     padding: 15px;
-    width: 175px;
+    width: 170px;
     height: 30px;
     border: 1px solid grey;
     text-align: center;
@@ -88,7 +83,7 @@ header {
 }
 
 #caja6 {
-    margin: 30px;
+    margin: 15px;
     padding: 15px;
     width: 170px;
     height: 30px;
@@ -99,8 +94,7 @@ header {
 
 
 #bloque2 {
-    margin: 10px;
-    padding: 5px;
+    margin: 5px;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -110,7 +104,7 @@ header {
     border: 1px solid grey;
     text-align: center;
     border-radius: 50px;
-    margin: 5px;
+    margin: 15px;
     width: 670px;
     height: 30px;
     padding: 20px;
@@ -121,7 +115,7 @@ header {
     border: 1px solid grey;
     text-align: center;
     border-radius: 50px;
-    margin: 5px;
+    margin: 15px;
     width: 670px;
     height: 30px;
     padding: 20px;
@@ -131,7 +125,7 @@ header {
     border: 1px solid grey;
     text-align: center;
     border-radius: 50px;
-    margin: 5px;
+    margin: 15px;
     width: 670px;
     height: 30px;
     padding: 20px;
@@ -142,7 +136,7 @@ header {
     border: 1px solid grey;
     text-align: center;
     border-radius: 50px;
-    margin: 5px;
+    margin: 15px;
     width: 670px;
     height: 30px;
     padding: 20px;
@@ -157,5 +151,6 @@ footer {
 }
 
 p {
-    padding: 15px;
+    margin: 15px;
+    justify-content: center;
 }
