@@ -1,0 +1,69 @@
+#registro {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: auto;
+    padding-right: auto;
+    border-top: 2px #888;
+    border-bottom: 2px #888;
+    width: 710px;
+    text-align: center;
+    margin: 20px;
+    background: rgba(0, 0, 0, 20%) url("../IMG/bg-form.png") no-repeat bottom;
+}
+ul {
+    list-style: none;
+}
+
+li {
+    padding-bottom: 15px;
+}
+
+label {
+    display: block;
+    padding: auto;
+    justify-content: center;
+}
+
+h1 {
+    size: 2em;
+    padding-bottom: 20px;
+    background: 
+        url("../IMG/bg-formtitle-left.png") left no-repeat,
+        url("../IMG/bg-formtitle-right.png") right no-repeat;
+    background-size: 100px auto;
+}
+
+#registro-submit {
+    border: none;
+    border-radius: 5px;
+    background: radial-gradient(rgb(144, 144, 144), rgb(72, 72, 72));
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 80%;
+}
+
+#registro-submit:hover {
+    opacity: 100%;
+    transition: .25s;
+}
+
+input:required {
+    background: url("../IMG/required.png") right no-repeat;
+    
+}
+
+input:valid:focus{
+    background: url("../IMG/valid.png") right no-repeat;
+}
+
+input:invalid:focus{
+    background: url("../IMG/invalid.png") right no-repeat;
+}
+
+input::selection{
+    background-color: #484848;
+    color: #fff;
+    text-shadow: none;
+}

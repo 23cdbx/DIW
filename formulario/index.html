@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <form id="registro" method="post">
+        <h1>Regístrate!</h1>
+        <ul>
+            <li>
+                <label for="nombre">Mi nombre es:</label>
+                <input type="text" id="nombre" name="nombre" required autofocus>
+            </li>
+            <li>
+                <label for="email">Mi email es:</label>
+                <input type="email" id="email" name="email" required multiple>
+            </li>
+            <li>
+                <label for="recuerdame">Recuérdame en este equipo</label>
+                <input type="checkbox" name="recuerdame" id="recuerdame">
+            </li>
+            <li>
+                <label for="url">Mi dirección web es:</label>
+                <input type="url" id="url" name="url" placeholder="http://ejemplo.com">
+            </li>
+            <li>
+                <label for="password1">Me gustaría que mi password fuera:</label>
+                <p>(al menos 6 caracteres, sin espacios)</p>
+                <input type="password" name="password1" id="password1" required pattern="\S{6,}">
+            </li>
+            <li>
+                <label for="password2">Mi password repetida es:</label>
+                <input type="password" name="password2" id="password2" required pattern="\S{6,}">
+            </li>
+            <li>
+                <label for="conocimientos">En una escala de 1 a 10, mis conocimientos de HTML5 son:</label>
+                <input type="range" name="conocimientos" id="conocimientos">
+            </li>
+            <li>
+                <label for="fechaInicio">Por favor, inicia mi suscripción el día:</label>
+                <input type="date" name="fechaInicio" id="fechaInicio" required min="1" max="10">
+            </li>
+            <li>
+                <label for="cantidad">Me gustaría recibir</label>
+                <input type="number" name="cantidad" id="cantidad" value="1" min="0" max="5">
+                <label for="cantidad">copias de El manual de HTML5.</label>
+            </li>
+            <li>
+                <label for="tambienCSS3">También regístrame para El manual de CSS3</label>
+                <input type="checkbox" id="tambienCSS3" name="tambienCSS3">
+            </li>
+            <li>
+                <button id="registro-submit" name="registro-submit">envíame</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
