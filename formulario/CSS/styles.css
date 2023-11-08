@@ -1,3 +1,14 @@
+/*Fuentes*/
+@font-face {
+    font-family: LeagueGothic;
+    src: url(../FONTS/LeagueGothic-Regular-VariableFont_wdth.ttf);
+}
+
+@font-face {
+    font-family: AcknowledgementMedium;
+    src: url(../FONTS/Acknowledgement.otf);
+}
+
 #registro {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -22,6 +33,7 @@ label {
     display: block;
     padding: auto;
     justify-content: center;
+    font-family: "LeagueGothic";
 }
 
 h1 {
@@ -31,6 +43,11 @@ h1 {
         url("../IMG/bg-formtitle-left.png") left no-repeat,
         url("../IMG/bg-formtitle-right.png") right no-repeat;
     background-size: 100px auto;
+    font-family: "AcknowledgementMedium";
+}
+
+p{
+    font-size: .9em;
 }
 
 #registro-submit {
@@ -39,14 +56,26 @@ h1 {
     background: radial-gradient(rgb(144, 144, 144), rgb(72, 72, 72));
     color: white;
     font-size: 2em;
+    font-family: "LeagueGothic";
     text-transform: uppercase;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     opacity: 80%;
+    width: 300px;
+    height: 55px;
 }
 
 #registro-submit:hover {
     opacity: 100%;
     transition: .25s;
+}
+
+input {
+    border: none;
+    border-bottom: 1px dotted #000;
+    background: transparent;
+    outline: none;
+    text-align: center;
+    height: 30px;
+    width: 200px;
 }
 
 input:required {
