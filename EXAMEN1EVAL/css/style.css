@@ -6,7 +6,7 @@
 /* Aquí empieza el css relacionado con el apartado "header" de la página. */
 /*Código css global, para todos los elementos dentro del header*/
 header {
-    background-color: rgb(0, 0, 110);
+    background: linear-gradient(rgb(0, 0, 110), rgb(0, 0, 139)); 
     width: 100%;
     height: 80px;
     position: relative;
@@ -32,7 +32,7 @@ header img {
 /*Aqui empieza el código relacionado con el apartado "nav" de la página-*/
 
 nav {
-    background: linear-gradient(red, orange 95%);
+    background:orange;
     width: 100%;
     height: 50px;
     text-align: center;
@@ -78,7 +78,7 @@ nav>ul>li>a {
 
 .submenu>ul {
     position: absolute;
-    left: 0px;
+    left: -30px;
     height: 0px;
     overflow: hidden;
     width: 145px;
@@ -135,7 +135,7 @@ nav>ul>li>ul>li:first-child:before {
 /* Aqui empieza el código relacionado con el apartado "main" de la página.*/
 
 main {
-    background-color: orange; 
+    background-color: rgb(207, 207, 207);
     width: 100%;
     height: 780px;
     position: relative;
@@ -144,23 +144,42 @@ main {
 /* Aqui empieza el código relacionado con los distintos elementos dentro del apartado "main" de la página. */
 
 #barra_lateral {
-    background-color: lightslategrey;
-    width: 200px;
+    background: linear-gradient(orange, rgb(255, 104, 45));
+    width: 300px;
     height: 100%;
+    padding: 10px;
+}
+
+#barra_lateral ul {
+    color: white;
+    text-shadow: 1px 1px 5px rgb(0, 0, 110);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+
+}
+
+#barra_lateral li {
+    margin: 10px;
 }
 
 #hombres {
     position: absolute;
-    background: radial-gradient(red, rgb(0, 0, 110));
+    background: linear-gradient(rgb(0, 0, 110), rgb(0, 0, 139)); 
     width: 500px;
     height: 90%;
-    left: 20%;
+    left: 25%;
     top: 20px;
     text-align: justify;
     padding: 20px;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 1px 1px 5px orange;
+    text-shadow: 2px 2px 0px #f06529;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px black;
 }
 
 #hombres_header img {
@@ -176,7 +195,7 @@ main {
 
 #hombres button {
     position: relative;
-    background-color: orange;
+    background-color: rgba(255, 165, 0, 80%);  
     border: transparent;
     left: 190px;
     top: 230px;
@@ -186,18 +205,25 @@ main {
 
 }
 
+#hombres button:hover{
+    transition: .2s;
+    background-color: rgba(255, 165, 0, 100%); ;
+}
+
 #mujeres {
     position: absolute;
-    background: radial-gradient(red, rgb(0, 0, 110));
+    background: linear-gradient(rgb(0, 0, 110), rgb(0, 0, 139)); 
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 1px 1px 5px orange;
+    text-shadow: 2px 2px 0px #f06529;
     width: 500px;
     height: 90%;
-    left: 54%;
+    left: 60%;
     top: 20px;
     text-align: justify;
     padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px black;
 }
 
 #mujeres_header img {
@@ -214,7 +240,7 @@ main {
 
 #mujeres button {
     position: relative;
-    background-color: orange;
+    background-color: rgba(255, 165, 0, 80%); 
     border: transparent;
     left: 200px;
     top: 230px;
@@ -224,11 +250,273 @@ main {
 
 }
 
+#mujeres button:hover{
+    transition: .2s;
+    background-color: rgba(255, 165, 0, 100%); ;
+}
+
+#tabla {
+    position: absolute;
+    background: rgb(0, 0, 110);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 0px #f06529;
+    width: 500px;
+    height: 30%;
+    left: 37%;
+    top: 20%;
+    text-align: justify;
+    padding: 20px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 12px;
+    margin: 45px;
+    width: 800px;
+    height: 400px;
+    text-align: left;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    z-index: 6;
+    background-color: #fff;
+}
+
+#lista{
+    background: linear-gradient(rgb(0, 0, 110), rgb(0, 0, 139)); 
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* Aparatado del codigo css dedicado al formulario */
+
+#formulario {
+    position: absolute;
+    background: linear-gradient(rgb(0, 0, 110), rgb(0, 0, 139)); 
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 0px #f06529;
+    width: 1000px;
+    height: 90%;
+    left: 25%;
+    top: 20px;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px black;
+}
+
+form {
+    background: linear-gradient(orange, rgb(255, 104, 45));
+    margin: 10px;
+    padding: 20px;
+    position: absolute;
+    height: 87%;
+    align-items: center;
+    border-radius: 15px;
+    width: 40%;
+}
+
+#form-header {
+    background: linear-gradient(orange, rgb(255, 104, 45));
+    margin: 10px;
+    padding: 20px;
+    position: absolute;
+    height: 10%;
+    left: 500px;
+    align-items: center;
+    border-radius: 15px;
+    width: 45%;
+}
+
+#vuelvapronto {
+    background: linear-gradient(orange, rgb(255, 104, 45));
+    margin: 10px;
+    padding: 20px;
+    position: absolute;
+    width: 285px;
+    height: 69%;
+    left: 500px;
+    top: 150px;
+    align-items: center;
+    border-radius: 15px;
+    width: 45%;
+}
+
+#vuelvapronto img{
+    width: 92%;
+    position: inherit;
+    top: 70px;
+    height: 83%;
+    border-radius: 15px;
+}
+
+form input, textarea{
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    color: black;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    padding: 1px 4px 1px 45px;
+    margin-bottom: 10px;
+    transition: all 0.4s ease-in;
+}
+
+form input {
+    height: 32px;
+    width: 330px;
+}
+
+form input:focus {
+    width: 370px;
+    box-shadow: 0px 0px 12px rgb(255, 255, 255);
+}
+
+#nombre:focus:valid {
+    background-image: url("../img/valid.png");
+    background-repeat: no-repeat;
+    background-position: 390px;
+}
+
+#apellido:focus:valid {
+    background-image: url("../img/valid.png");
+    background-repeat: no-repeat;
+    background-position: 390px;
+}
+
+#dni:focus:valid {
+    background-image: url("../img/valid.png");
+    background-repeat: no-repeat;
+    background-position: 390px;
+}
+
+#email:focus:valid {
+    background-image: url("../img/valid.png");
+    background-repeat: no-repeat;
+    background-position: 390px;
+}
+
+#telefono:focus:valid {
+    background-image: url("../img/valid.png");
+    background-repeat: no-repeat;
+    background-position: 390px;
+}
+
+#n_pedido:focus:valid {
+    background-image: url("../img/valid.png");
+    background-repeat: no-repeat;
+    background-position: 390px;
+}
+
+#nombre:focus:invalid {
+    background-image: url("../img/invalid.png");
+    background-repeat: no-repeat;
+    background-position: 390px;
+}
+
+#apellido:focus:invalid {
+    background-image: url("../img/invalid.png");
+    background-repeat: no-repeat;
+    background-position: 390px;
+}
+
+#dni:focus:invalid {
+    background-image: url("../img/invalid.png");
+    background-repeat: no-repeat;
+    background-position: 390px;
+}
+
+#email:focus:invalid {
+    background-image: url("../img/invalid.png");
+    background-repeat: no-repeat;
+    background-position: 390px;
+}
+
+#telefono:focus:invalid {
+    background-image: url("../img/invalid.png");
+    background-repeat: no-repeat;
+    background-position: 390px;
+}
+
+#n_pedido:focus:invalid {
+    background-image: url("../img/invalid.png");
+    background-repeat: no-repeat;
+    background-position: 390px;
+}
+
+
+
+input + label::after {
+    content: "*";
+}
+
+#mensaje {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    width: 90%;
+    height: 150px;
+    background-image: url("../img/icon-mensaje.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    
+}
+
+#mensaje:focus {
+    box-shadow: 0px 0px 12px rgb(255, 255, 255);
+}
+
+#enviar {
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    border: 1px solid #434343;
+    color: white;
+    background: linear-gradient(rgb(0, 0, 110), rgb(0, 0, 139)); 
+    box-shadow: inset 0px 1px 1px #353535;
+    cursor: pointer;
+    width: 100%;
+    height: 31%;
+    border-radius: 15px;
+}
+
+#enviar:hover{
+    
+    background: linear-gradient(rgb(0, 0, 139), rgb(0, 0, 110)); 
+}
+
+#contenedorFormulario {
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+    width: 600px;
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    background-color: rgba(200, 200, 200, 0.7);
+    justify-content: left;
+    box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.4);
+}
+
+#contenedorFormulario h1 {
+    position: absolute;
+    top: -16px;
+    left: 490px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: "Aguafina Script";
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 2px #777;
+    padding: 0px 10px 0px 10px;
+
+}
+
+
 /* Aqui empieza el código relacionado con el apartado "footer" de la página. */
 
 footer {
     position: relative;
-    background-color: rgb(0, 0, 110);
+    background: linear-gradient(rgb(0, 0, 110), rgb(0, 0, 139)); 
     width: 100%;
     height: 60px;
 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESPORNETS</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/espornets.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="./img/espornets.png" alt="logo_espornets">
+        <h1>ESPORNETS</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li class="submenu"><a href="#">Productos</a>
+                <ul>
+                    <li><a href="./hombre.html">Zapatilla hombre</a></li>
+                    <li><a href="./mujer.html">Zapatilla mujer</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Pedidos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="barra_lateral">
+            <div id="lista">
+                <ul>
+                    <li>Páginas de interés
+                        <ul>
+                            <li>Adidas</li>
+                            <li>Nike</li>
+                            <li>Puma</li>
+                        </ul>
+                    </li>
+                    <li>Publicaciones sobre la empresa
+                        <ul>
+                            <li>Publi 1</li>
+                            <li>Publi 2</li>
+                            <li>Publi 3</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <article id="formulario">
+            <form>
+                <h2>Introduzca sus datos</h2>
+                <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required><label></label><br>
+                <input type="text" id="apellido" name="apellido" placeholder="Escriba su apellido" required><label></label><br>
+                <input type="text" id="dni" name="dni" placeholder="Introduzca su DNI" pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra" minlength="9" maxlength="9" /><label></label><br>
+                <input type="email" id="email" name="email" placeholder="Escriba su email" required><label></label><br>
+                <input type="tel" id="telefono" name="telefono" placeholder="Introduzca varios numeros de contacto" required><label></label><br>
+                <input type="date" id="f_nacimiento" name="f_nacimiento" placeholder="Introduzca su fecha de nacimiento" required><label></label><br>
+                <select name="productos" id="productos">
+                    <option value="ZM-120-RUN">ZM-120-RUN</option>
+                    <option value="ZM-150-PRO">ZM-150-PRO</option>
+                    <option value="ZM-120-SUP">ZM-120-SUP</option>
+                    <option value="ZM-120-PRO">ZM-120-PRO</option>
+                    <option value="ZH-120-RUN">ZH-120-RUN</option>
+                    <option value="ZH-150-PRO">ZH-150-PRO</option>
+                    <option value="ZH-120-SUP">ZH-120-SUP</option>
+                    <option value="ZH-120-PRO">ZH-120-PRO</option>
+                </select><br><br>
+                <input type="color" name="color" id="color"><br>
+                <input type="number" name="n_pedido" id="n_pedido" required><label></label><br>
+                <button type="submit" id="enviar">Pagar</button>
+            </form>
+            <div id="form-header">
+                <h2>¡Confirme su pedido!</h2>
+            </div>
+            <div id="vuelvapronto">
+                <h2>¡Vuelva pronto!</h2>
+                <img src="../img/pexels-leandro-boogalu-1390403.jpg" alt="hombre_corriendo">
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>ESPORNETS - Calzado deportivo de calidad para todos.</p>
+    </footer>
+</body>
+</html>
