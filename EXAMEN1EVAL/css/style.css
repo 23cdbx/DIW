@@ -1,3 +1,9 @@
+@font-face {
+    font-family: MuseoModerno;
+    src: url(../fonts/MuseoModerno-Italic-VariableFont_wght.ttf);
+}
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -295,7 +301,7 @@ main {
     position: absolute;
     background: linear-gradient(rgb(0, 0, 110), rgb(0, 0, 139)); 
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: MuseoModerno;
     text-shadow: 2px 2px 0px #f06529;
     width: 1000px;
     height: 90%;
@@ -358,6 +364,7 @@ form input, textarea{
     color: black;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
     box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    font-family: MuseoModerno;
     font-weight: bold;
     padding: 1px 4px 1px 45px;
     margin-bottom: 10px;
@@ -452,21 +459,6 @@ input + label::after {
     content: "*";
 }
 
-#mensaje {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    width: 90%;
-    height: 150px;
-    background-image: url("../img/icon-mensaje.png");
-    background-repeat: no-repeat;
-    background-position: 10px;
-    
-}
-
-#mensaje:focus {
-    box-shadow: 0px 0px 12px rgb(255, 255, 255);
-}
-
 #enviar {
     margin: 10px 0px 10px 0px;
     padding: 10px;
@@ -511,6 +503,52 @@ input + label::after {
 
 }
 
+#video {
+    position: absolute;
+    background: linear-gradient(rgb(0, 0, 110), rgb(0, 0, 139)); 
+    width: 1100px;
+    height: 90%;
+    left: 25%;
+    top: 20px;
+    text-align: justify;
+    padding: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 0px #f06529;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px black;
+}
+
+/* Aquí empieza el código relacionado con el apartado de animaciones, transiciones y transformacines. */
+
+
+ @-webkit-keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+  @keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+  
+  
+  .slide-fwd-center {
+	-webkit-animation: slide-fwd-center 0.45s ease-in both;
+	        animation: slide-fwd-center 0.45s ease-in both;
+}
+  
 
 /* Aqui empieza el código relacionado con el apartado "footer" de la página. */
 
