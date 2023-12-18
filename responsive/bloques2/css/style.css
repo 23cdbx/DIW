@@ -1,0 +1,43 @@
+@media all and (max-width: 800px) {
+    #contenedor1 .bloque {
+        /* Cuando el ancho sea inferior a
+800px el elemento será un bloque */
+        display: block !important;
+        width: auto !important;
+        margin: 20px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    #contenedor2 .bloque {
+        /* Cuando el ancho sea inferior a
+800px el elemento será un bloque */
+        display: block !important;
+        width: auto !important;
+        margin: 20px;
+    }
+}
+
+#contenedor1 .bloque {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    border: 1px solid #333;
+    background: rgb(197, 226, 231);
+    margin: 20px;
+}
+
+#contenedor2 .bloque {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    border: 1px solid #333;
+    background: rgb(197, 226, 231);
+    margin: 20px;
+}
+
+#season p {
+    background: rgb(197, 226, 231);
+    margin: 10px;
+    padding: 10px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/resolucion.css">
+    <title>Art Direction</title>
+</head>
+
+<body>
+    <h2>Imagen de polilla</h2>
+    
+    <picture>
+     <source media="(min-width: 500px)" srcset="src/polilla.jpg">
+     <source media="(max-width: 500px)" srcset="src/polilla_peque.jpg">
+     <source media="(max-width: 300px)" srcset="src/polilla_maspeque.jpg">
+     <img src="polilla.jpg" alt="Polilla">
+    </picture>
+</body>
+
+</html>
