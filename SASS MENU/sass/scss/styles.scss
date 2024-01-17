@@ -1,3 +1,17 @@
+// Keyframes
+
+@keyframes iluminar {
+    from {
+        color: #eee;
+        background-color: #666;
+    }
+
+    to {
+        color: #fff;
+        background-color: #888;
+    }
+}
+
 //Variables
 
 $textColor : #eee;
@@ -12,96 +26,105 @@ $backgroundColorHover : #888;
 }
 
 @mixin hover() {
-    &:hover {
-        color: $textColorHover;
-        background-color: $backgroundColorHover;
-    }
+    color: $textColorHover;
+    background-color: $backgroundColorHover;
 }
 
 @mixin box-sizing($valor) {
     -moz-box-sizing: $valor;
     -webkit-box-sizing: $valor;
-    -o-box-sizing: $valor;
-    -khtml-box-sizing: $valor;
-    -ms-box-sizing: $valor;
 }
 
 @mixin transition($property, $duration, $timing: linear) {
     -moz-transition: $property $duration $timing;
     -webkit-transition: $property $duration $timing;
-    -o-transition: $property $duration $timing;
-    -khtml-transition: $property $duration $timing;
-    -ms-transition: $property $duration $timing;
 }
 
 @mixin animation($name, $duration, $timing: linear) {
     -moz-animation: $name $duration $timing;
     -webkit-animation: $name $duration $timing;
-    -o-animation: $name $duration $timing;
-    -khtml-animation: $name $duration $timing;
-    -ms-animation: $name $duration $timing;
 }
 
 //Nexting
 
-header {
-    background-color: lightgrey;
-    height: 50px;
-    @include box-sizing(border-box);
+nav {
+    position: absolute;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 
-    h1 {
-        font-size: 25px;
-        color: #3b3b3b;
-        position: absolute;
-        top: 1px;
-        left: 35px;
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    >ul {
+        width: 100%;
+        height: 32px;
+        @include color();
+    }
+
+    a {
+        @include color();
+        text-decoration: none;
+        width: 160px;
+        padding: 7px 20px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            @include hover();
+            @include animation(iluminar, 0.4s, linear);
+        }
     }
 }
 
-nav {
+ul.submenu {
+    position: absolute;
+    height: 0px;
+    overflow: hidden;
+    @include transition(height, 0.5s, ease-out);
+}
 
-    @include color();
-    display: row;
-    position: relative;
-    top: -16px;
-    height: 25px;
+li.categoria {
+    float: left;
 
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        .categoria {
-            @include color();
-            position: relative;
-            display: inline-block;
-
-            .submenu {
-                @include color();
-                list-style: none;
-                display: none;
-                position: absolute;
-                height: 85px;
-                z-index: 1;
-            }
-
-            &:hover .submenu {
-                display: block;
-            }
-
-            a {
-                @include color();
-                text-decoration: none;
-                font-size: 15px;
-                position: relative;
-                top: 2px;
-            }
-        }
+    >a {
+        @include transition(padding, 0.4s, ease-out);
     }
 
+    &:hover {
+        >a {
+            padding: 10px 20px;
+        }
+
+        ul.submenu {
+            height: 100px;
+        }
+    }
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    padding: 12px 30px;
+    font-size: 1.8em;
+    color: #444;
+    background-color: #eee;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 footer {
     @include color();
     @include box-sizing(border-box);
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding: 5px;
 }
